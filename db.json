@@ -1,0 +1,48 @@
+
+  {
+    "herosData": [
+    {
+      "id": 1,
+      "name": "Spider-Man",
+      "img_url": "https://upload.wikimedia.org/wikipedia/en/2/21/Web_of_Spider-Man_Vol_1_129-1.png",
+      "Abilities": "Superhuman strength, speed, reflexes, agility, coordination and balance"
+      
+    },
+    {
+      "id": 2,
+      "name": "Hulk",
+      "img_url": "https://upload.wikimedia.org/wikipedia/en/a/aa/Hulk_%28circa_2019%29.png",
+      "Abilities": "Superhuman strength, speed, stamina, and durability , Anger empowerment , Regeneration, Shockwave generation"
+    },
+    {
+      "id": 3,
+      "name": "Iron Man",
+      "img_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Iron_Man_%28circa_2018%29.png/220px-Iron_Man_%28circa_2018%29.png",
+      "Abilities": "Superhuman strength, speed, durability, agility, reflexes, and senses, powered armor suit"
+    },
+    {
+      "id": 4,
+      "name": "Captain America",
+      "img_url": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/Captain_America_%28Steve_Rogers%29.png/220px-Captain_America_%28Steve_Rogers%29.png",
+      "Abilities": "Enhanced strength, speed, stamina, durability, agility, reflexes, senses, and mental processing via the super soldier serum"
+    },
+    {
+      "id": 5,
+      "name": "Doctor Strange",
+      "img_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4f/Doctor_Strange_Vol_4_2_Ross_Variant_Textless.jpg/220px-Doctor_Strange_Vol_4_2_Ross_Variant_Textless.jpg",
+      "Abilities": "Mastery of magic, Utilizes mystical artifacts, such as the Cloak of Levitation and the Eye of Agamotto, Genius-level intellect, Skilled martial artist, Gifted physician and surgeon"
+    },
+    {
+      "id": 6,
+      "name": "Black Panther",
+      "img_url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Black_Panther_OS_Vol_1_2.png/220px-Black_Panther_OS_Vol_1_2.png",
+      "Abilities": "The power to draw upon the knowledge, strength and every experience of every previous Black Panther, Superhuman strength, endurance, speed, agility, reflexes, stamina and senses, Expert hand-to-hand combatant and martial artist, Genius-level intellect, Highly proficient tactician, strategist and inventor Utilizing vibranium suit and equipment"
+    },
+    {
+      "id": 7,
+      "name": "Deadpool",
+      "img_url": "https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Deadpool.png/220px-Deadpool.png",
+      "Abilities": "Regeneration/Healing Factor, Extended longevity, Skilled marksman, swordsman, martial artist and hand-to-hand combatant, Master assassin, Using devices granting teleportation and holographic disguise, Fourth wall breaks, Peak human speed, Superhuman strength, durability, stamina, reflexes and agility"
+    }
+  ]
+}
