@@ -1,16 +1,16 @@
 import React from 'react'
 
-const HerosCard = () => {
+const HerosCard = ({ heros }) => {
+    
 
 
 
   return (
     <div>
-        <li className='HeroCard'>
-            <img>{null}</img>
-            <h4>{null}</h4>
-            <p>{null}</p>
-
+        <li className='heroCard'>
+            <img>{img_url}</img>
+            <h4>{name}</h4>
+            <p>{abilities}</p>
         </li>
     </div>
   )
