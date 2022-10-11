@@ -1,29 +1,24 @@
-import React, { useEffect, useState } from 'react';
-import HerosCard from './HerosCard';
-import HerosForm from './HerosForm';
-import Search from './Search';
+import React from 'react'
+import HerosCard from './HerosCard'
 
-const HerosContainer = () => {
-    const [heros, setHeros] = useState([]);
-
-    useEffect(() => {
-        fetch("http://localhost:3001/herosData")
-        .then(r => r.json())
-        .then(data => setHeros(data))
-    }, []);
-
-
-
-    return (
-    <div>
-        <ul>
-        <HerosCard heros={ heros } />
+const HerosContainer = ({ heros }) => {
+  return (
+    <main>
+        <ul className='cardsholder'>
+            {heros.map((hero) => {
+              return( 
+                <HerosCard 
+                hero={hero}
+                key={hero.id}
+                // name={hero.name}
+                // image={hero.img_url}
+                // abilities={hero.abilities}
+                />
+              )
+            })}
         </ul>
-        HerosContainer
-        <HerosForm />
-        <Search />
-    </div>
+    </main>
   )
 }
 
-export default HerosContainer;
+export default HerosContainer
