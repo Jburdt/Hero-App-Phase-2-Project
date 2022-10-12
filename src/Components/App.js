@@ -2,21 +2,20 @@ import React, { useState, useEffect } from 'react';
 import HerosContainer from './HerosContainer.js';
 import {  BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import NavBar from './NavBar';
-// import Search from './Search'
+import Search from './Search'
 
 const App = () => {
   
   const [heros, setHeros] = useState([]);
   
 
-  // const handleSearch = (heros) => {
-  //   fetch(``)
-  // }
+  const handleSearch = (heros) => {
+    fetch(``)
+  }
 
   useEffect(() => {
       fetch("http://localhost:3001/herosData")
       .then(r => r.json())
-      // .then(data => console.log(data)).catch(error => console.log(error))
       .then(data => setHeros(data)).catch(error => console.log(error))
   }, []);
 
@@ -31,7 +30,7 @@ const App = () => {
      <NavBar />
     <Routes> 
      <Route path='/' element={<HerosContainer heros={heros}/>}/>
-     {/* <Search handleSearch={handleSearch} /> */}
+     <Route path='/search'element={<Search handleSearch={handleSearch}/>}/> 
     </Routes>
     </Router>
   );

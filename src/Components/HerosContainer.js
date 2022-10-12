@@ -10,9 +10,6 @@ const HerosContainer = ({ heros }) => {
                 <HerosCard 
                 hero={hero}
                 key={hero.id}
-                // name={hero.name}
-                // image={hero.img_url}
-                // abilities={hero.abilities}
                 />
               )
             })}

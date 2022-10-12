@@ -6,6 +6,7 @@ const HerosCard = ({ hero }) => {
     <div className='Card'>
       <h2> Avenger: {hero.name}</h2>
       <img src={hero.img_url} alt="Avengers" />
+      <br></br>
       <button>See Abilities</button>
       <p>Abilities: {hero.abilities}</p>  
       <hr></hr>
