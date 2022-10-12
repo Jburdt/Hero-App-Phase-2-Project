@@ -7,16 +7,18 @@ import Search from './Search'
 const App = () => {
   
   const [heros, setHeros] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
   
 
-  const handleSearch = (heros) => {
-    fetch(``)
+  const handleSearch = () => {
+    return heros.filter((herosObj) => (herosObj.name.toLowerCase().includes(searchTerm.toLowerCase()) || searchTerm === ""))
   }
 
   useEffect(() => {
       fetch("http://localhost:3001/herosData")
       .then(r => r.json())
-      .then(data => setHeros(data)).catch(error => console.log(error))
+      .then(data => setHeros(data))
+      .catch(error => console.log(error))
   }, []);
 
   if(!heros) {

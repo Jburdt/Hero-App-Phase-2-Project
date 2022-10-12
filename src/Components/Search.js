@@ -24,4 +24,4 @@ const Search = ({ handleSearch }) => {
   )
 }
 
-export default Search
+export default Search;
