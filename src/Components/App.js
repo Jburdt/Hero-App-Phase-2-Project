@@ -2,19 +2,13 @@ import React, { useState, useEffect } from 'react';
 import HerosContainer from './HerosContainer.js';
 import {  BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import NavBar from './NavBar';
-import Search from './Search'
+import NewForm from './NewForm'
 
 const App = () => {
   
   const [heros, setHeros] = useState([]);
-  const [searchTerm, setSearchTerm] = useState('');
-  
-
-  const handleSearch = () => {
-    return heros.filter((herosObj) => (herosObj.name.toLowerCase().includes(searchTerm.toLowerCase()) || searchTerm === ""))
-  }
-
-  useEffect(() => {
+ 
+    useEffect(() => {
       fetch("http://localhost:3001/herosData")
       .then(r => r.json())
       .then(data => setHeros(data))
@@ -32,7 +26,7 @@ const App = () => {
      <NavBar />
     <Routes> 
      <Route path='/' element={<HerosContainer heros={heros}/>}/>
-     <Route path='/search'element={<Search handleSearch={handleSearch}/>}/> 
+     <Route path='/new-form'element={<NewForm />}/> 
     </Routes>
     </Router>
   );

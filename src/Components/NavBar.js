@@ -30,7 +30,7 @@ const NavBar = () => {
       </li>
       <br></br>
       <li>
-      <Link to="/search">Search</Link>
+      <Link to="/new-form">Add New Hero</Link>
       </li>
       <br></br>
       <li>
