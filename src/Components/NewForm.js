@@ -1,13 +1,14 @@
 import React from 'react';
-import TextField from '@material-ui/core/TextField';
+
+import Input from '@material-ui/core/Input';
 
 const NewForm = () => {
   return (
-    <form className="new-hero" noValidate autoComplete="off">
-      <TextField id="standard-basic" label="Hero Name" />
-      <TextField id="filled-basic" label="Hero Image Link" variant="filled" />
-      <TextField id="outlined-basic" label="Hero Abilities" variant="outlined" />
-    </form>
+  <form className="new-hero" noValidate autoComplete="off">
+    <Input defaultValue={null} placeholder="Hero Name..." inputProps={{ 'aria-label': 'description' }} />
+    <Input placeholder="Hero Link..." inputProps={{ 'aria-label': 'description' }} />
+    <Input placeholder="Hero Abilities..." inputProps={{ 'aria-label': 'description' }} />
+  </form>
   )
 }
 
