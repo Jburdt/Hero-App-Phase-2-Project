@@ -41,6 +41,20 @@
       "name": "Deadpool",
       "img_url": "https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Deadpool.png/220px-Deadpool.png",
       "abilities": "Regeneration/Healing Factor, Extended longevity, Skilled marksman, swordsman, martial artist and hand-to-hand combatant, Master assassin, Using devices granting teleportation and holographic disguise, Fourth wall breaks, Peak human speed, Superhuman strength, durability, stamina, reflexes and agility"
+    },
+    {
+      "id": 8,
+      "name": "asdf",
+      "img_url": "",
+      "abilities": "",
+      "image_url": "f"
+    },
+    {
+      "id": 9,
+      "name": "asdg",
+      "img_url": "",
+      "abilities": "asdfasdf",
+      "image_url": "f"
     }
   ]
 }

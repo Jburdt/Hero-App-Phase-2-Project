@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Home from './Home';
-import HerosList from './HerosList.js';
+import HerosList from './HerosList';
 import {  BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import NavBar from './NavBar';
 import NewForm from './NewForm'
@@ -30,9 +30,9 @@ const App = () => {
     <Router>
      <NavBar />
     <Routes> 
-     <Route path='/' element={<Home />}/>
-     <Route path='/heros' element={<HerosList heros={heros}/>}/>
-     <Route path='/heros/new'element={<NewForm addHero={addHero} />}/> 
+      <Route exact path='/' element={<Home />}/>
+      <Route path='/heros' element={<HerosList heros={heros}/>}/>
+      <Route path='/heros/new'element={<NewForm addHero={addHero} />}/> 
     </Routes>
     </Router>
   );
