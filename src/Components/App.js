@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import HerosContainer from './HerosContainer.js';
+import Home from './Home';
+import HerosList from './HerosList.js';
 import {  BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import NavBar from './NavBar';
 import NewForm from './NewForm'
@@ -20,13 +21,18 @@ const App = () => {
       <h2> Loading...</h2>
     )
   };
+
+  const addHero = (hero) => {
+    setHeros([...heros, hero])
+  };
   
   return (
     <Router>
      <NavBar />
     <Routes> 
-     <Route path='/' element={<HerosContainer heros={heros}/>}/>
-     <Route path='/new-form'element={<NewForm />}/> 
+     <Route path='/' element={<Home />}/>
+     <Route path='/heros' element={<HerosList heros={heros}/>}/>
+     <Route path='/heros/new'element={<NewForm addHero={addHero} />}/> 
     </Routes>
     </Router>
   );

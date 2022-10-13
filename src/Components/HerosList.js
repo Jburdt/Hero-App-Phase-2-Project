@@ -1,7 +1,7 @@
 import React from 'react'
 import HerosCard from './HerosCard'
 
-const HerosContainer = ({ heros }) => {
+const HerosList = ({ heros }) => {
   return (
     <main>
         <ul className='cardsholder'>
@@ -18,4 +18,4 @@ const HerosContainer = ({ heros }) => {
   )
 }
 
-export default HerosContainer
+export default HerosList;
