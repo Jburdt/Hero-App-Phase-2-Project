@@ -44,17 +44,9 @@
     },
     {
       "id": 8,
-      "name": "asdf",
-      "img_url": "",
-      "abilities": "",
-      "image_url": "f"
-    },
-    {
-      "id": 9,
-      "name": "asdg",
-      "img_url": "",
-      "abilities": "asdfasdf",
-      "image_url": "f"
+      "name": "Carol Danvers",
+      "img_url": "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Carol_Danvers_-_%28evolution%29.jpg/220px-Carol_Danvers_-_%28evolution%29.jpg",
+      "abilities": "Superhuman strength, speed, durability, agility, stamina, and reflexes Energy manipulation, absorption, and projection Human/Kree physiology granting resistance to toxins and poisons \"Seventh sense\" granting flash precognition Accelerated healing factor Flight"
     }
   ]
 }

@@ -52,8 +52,8 @@ const NewForm = ({ addHero }) => {
       body: JSON.stringify(heroData)
     })
     .then(r => r.json())
-    .then(data => setHeroData(data))
-    // .then(addHero)
+    // .then(data => setHeroData(data))
+    .then(addHero)
   }
   
   
@@ -62,7 +62,7 @@ const NewForm = ({ addHero }) => {
   <form onSubmit={handleSubmit} className="new-hero" noValidate autoComplete="off">
     <label htmlFor='name'/>
     <Input id='name' onChange={handleChange} type='text' value={heroData.name} placeholder="Hero Name..."  />
-    <Input id='image_url' onChange={handleChange} type='text' value={heroData.img_url} placeholder="Hero Link..."  />
+    <Input id='img_url' onChange={handleChange} type='text' value={heroData.img_url} placeholder="Hero Link..."  />
     <Input id='abilities' onChange={handleChange} type='text' value={heroData.abilities} placeholder="Hero Abilities..."  />
     <Button
         type="submit"
