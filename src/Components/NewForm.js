@@ -2,13 +2,9 @@ import React, { useState } from 'react';
 import Input from '@material-ui/core/Input';
 import Button from '@material-ui/core/Button';
 import CloudUploadIcon from '@material-ui/icons/CloudUpload';
-// import { useNavigate } from "react-router-dom"
 
 const NewForm = ({ addHero }) => {
 
-  // const [heroName, setHeroName] = useState('')
-  // const [heroImage, setHeroImage] = useState('')
-  // const [heroAbilities, setHeroAbilites] = useState('')
   const [heroData, setHeroData] =useState({
     id: 0,
     name: "",
@@ -21,24 +17,7 @@ const NewForm = ({ addHero }) => {
       ...heroData,
       [event.target.id]: event.target.value,
     });
-  }
-  
-
-  
-  // const handleHeroName = (e) => {
-  //   // e.preventDefault()
-  //   setHeroName(e.target.value)
-  // }; 
-  
-  // const handleHeroImage = (e) => {
-  //   // e.preventDefault()
-  //   setHeroImage(e.target.value)
-  // }; 
-  
-  // const handleHeroAbilities = (e) => {
-  //   // e.preventDefault()
-  //   setHeroAbilites(e.target.value)
-  // }; 
+  } 
   
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -52,10 +31,8 @@ const NewForm = ({ addHero }) => {
       body: JSON.stringify(heroData)
     })
     .then(r => r.json())
-    // .then(data => setHeroData(data))
     .then(addHero)
   }
-  
   
   return (
     <div>

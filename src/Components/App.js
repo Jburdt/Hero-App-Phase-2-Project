@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Home from './Home';
 import HerosList from './HerosList';
-import {  BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import {  BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from './NavBar';
-import NewForm from './NewForm'
+import NewForm from './NewForm';
 
 const App = () => {
   

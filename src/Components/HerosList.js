@@ -1,5 +1,5 @@
-import React from 'react'
-import HerosCard from './HerosCard'
+import React from 'react';
+import HerosCard from './HerosCard';
 
 const HerosList = ({ heros }) => {
   return (
