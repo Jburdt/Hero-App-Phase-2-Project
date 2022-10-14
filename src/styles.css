@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -14,4 +14,14 @@ body {
   align-items: center;
   gap: 2rem;
   padding: 0 1rem;
+} */
+
+.new-hero {
+  background-color: lightblue;
+  padding: 10px 20px;
+  border-radius: 10px ;
+  display:grid;
+  margin: 45px;
+  justify-content: center;
 }
+
