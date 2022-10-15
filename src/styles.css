@@ -1,18 +1,54 @@
+body {
+  background-image: url(https://assets.entrepreneur.com/content/3x2/2000/20160701113917-Marvel.jpeg);
+  /* max-width: fit-content; */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 
-
-/* body {
-  margin: 0;
 }
 
-.nav {
-  background-color: #333;
-  color: blue;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  padding: 0 1rem;
-} */
+.link {
+  color: yellow;
+  background-color: red;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.NavBar {
+  background-color: transparent;
+  font-size: 20px;
+  color: yellow;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.welcome {
+  align-content: auto;
+  text-align: center ;
+  background-color: transparent;
+}
+
+h1 {
+  border-style: solid;
+  border-width: 2px;
+  border-color: yellow;
+  border-radius: 10px;
+  color: white;
+  font-size: 100px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+  font-size: larger;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.card-container {
+  background-color: transparent;
+  padding: 1rem;
+  background-size: auto;
+  border-radius: 20px;
+}
 
 .new-hero {
   background-color: lightblue;
@@ -25,7 +61,13 @@
 
 .custom-style {
   border-radius: 10px;
-  /* padding: 0px; */
   display: flow-root;
-  
 }
+
+.style-name {
+  color: yellow;
+}
+/* *{
+  margin: 0;
+  padding: 0;
+} */
