@@ -1,10 +1,8 @@
 body {
   background-image: url(https://assets.entrepreneur.com/content/3x2/2000/20160701113917-Marvel.jpeg);
-  /* max-width: fit-content; */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-
 }
 
 .link {
@@ -41,6 +39,7 @@ p {
   font-size: larger;
   background-color: black;
   border-radius: 10px;
+  padding: 2px;
 }
 
 .card-container {
@@ -67,7 +66,10 @@ p {
 .style-name {
   color: yellow;
 }
-/* *{
-  margin: 0;
-  padding: 0;
-} */
+
+.btn {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: red;
+  background-color: black;
+  border-radius: 20px;
+}

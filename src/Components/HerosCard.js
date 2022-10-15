@@ -15,7 +15,7 @@ const HerosCard = ({ hero }) => {
       <h2 className='style-name'> Avenger: {hero.name}</h2>
       <img className="custom-style" src={hero.img_url} alt={"Avengers" }/>
       <br />
-      <button onClick={handleToggle}>{toggle ? "Hide Abilities" : "Show Abilities"}</button>
+      <button className='btn' onClick={handleToggle}>{toggle ? "Hide Abilities" : "Show Abilities"}</button>
       { toggle ? <p>Abilities: {hero.abilities} </p> : null }  
       <hr></hr>
     </div>
