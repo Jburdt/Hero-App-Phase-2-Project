@@ -1,8 +1,6 @@
-/* * {
-  box-sizing: border-box;
-}
 
-body {
+
+/* body {
   margin: 0;
 }
 
@@ -19,9 +17,15 @@ body {
 .new-hero {
   background-color: lightblue;
   padding: 10px 20px;
-  border-radius: 10px ;
+  border-radius: 10px;
   display:grid;
   margin: 45px;
   justify-content: center;
 }
 
+.custom-style {
+  border-radius: 10px;
+  /* padding: 0px; */
+  display: flow-root;
+  
+}

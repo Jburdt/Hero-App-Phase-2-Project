@@ -10,13 +10,15 @@ const HerosCard = ({ hero }) => {
 
   return (
    <> 
-    <div className='Card'>
+  <div className='card-container'>  
+   <div className='Card'>
       <h2> Avenger: {hero.name}</h2>
-      <img src={hero.img_url} alt="Avengers" />
-      <br></br>
+      <img className="custom-style" src={hero.img_url} alt="Avengers" />
+      <br />
       <button onClick={handleToggle}>{toggle ? "Hide Abilities" : "Show Abilities"}</button>
       { toggle ? <p>Abilities: {hero.abilities} </p> : null }  
       <hr></hr>
+    </div>
     </div>
    </> 
   )

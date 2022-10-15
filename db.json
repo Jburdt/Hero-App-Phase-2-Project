@@ -47,12 +47,6 @@
       "name": "Carol Danvers",
       "img_url": "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Carol_Danvers_-_%28evolution%29.jpg/220px-Carol_Danvers_-_%28evolution%29.jpg",
       "abilities": "Superhuman strength, speed, durability, agility, stamina, and reflexes Energy manipulation, absorption, and projection Human/Kree physiology granting resistance to toxins and poisons \"Seventh sense\" granting flash precognition Accelerated healing factor Flight"
-    },
-    {
-      "id": 9,
-      "name": "Test",
-      "img_url": "test",
-      "abilities": "test"
     }
   ]
 }
