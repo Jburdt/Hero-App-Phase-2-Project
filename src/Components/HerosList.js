@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HerosCard from './HerosCard';
 
 const HerosList = ({ heros }) => {
+
+  const [ search, setSearch ] = useState('');
+
+  const handleInput = (e) => {
+    setSearch(e.target.value)
+  };
+
   return (
   <> 
-    <input className='search' type='text' placeholder='Search hero...' ></input>
+    <input onChange={handleInput} value={search} className='search' type='text' placeholder='Search hero...' ></input>
+    <button type='submit' className='submit'>Search</button>
       <main>
         <ul className='cardsholder'>
             {heros.map((hero) => {
