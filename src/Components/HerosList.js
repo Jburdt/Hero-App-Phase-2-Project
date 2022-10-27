@@ -3,7 +3,9 @@ import HerosCard from './HerosCard';
 
 const HerosList = ({ heros }) => {
   return (
-    <main>
+  <> 
+    <input className='search' type='text' placeholder='Search hero...' ></input>
+      <main>
         <ul className='cardsholder'>
             {heros.map((hero) => {
               return( 
@@ -14,7 +16,8 @@ const HerosList = ({ heros }) => {
               )
             })}
         </ul>
-    </main>
+      </main>
+  </>
   )
 }
 
