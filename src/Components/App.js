@@ -9,20 +9,20 @@ import Counter from './Counter';
 const App = () => {
   
   const [heros, setHeros] = useState([]);
- 
-    useEffect(() => {
-      fetch("http://localhost:3001/herosData")
-      .then(r => r.json())
-      .then(data => setHeros(data))
-      .catch(error => console.log(error))
+  
+  useEffect(() => {
+    fetch("http://localhost:3001/herosData")
+    .then(r => r.json())
+    .then(data => setHeros(data))
+    .catch(error => console.log(error))
   }, []);
-
+  
   if(!heros) {
     return(
       <h2> Loading...</h2>
-    )
-  };
-
+      )
+    };
+    
   const addHero = (hero) => {
     setHeros([...heros, hero])
   };
