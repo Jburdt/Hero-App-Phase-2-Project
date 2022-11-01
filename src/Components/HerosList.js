@@ -4,17 +4,10 @@ import HerosCard from './HerosCard';
 const HerosList = ({ heros }) => {
 
   const [ search, setSearch ] = useState('');
-  const [ name, setName ] = useState('');
-  const [ img_url, setImg_url ] = useState('');
-  const [ abilities, setAbilities ] = useState('');
+  
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const herosFormat = {
-      name: name,
-      img_url: img_url,
-      abilities: abilities
-    }
   };
 
   const handleInput = (e) => {
