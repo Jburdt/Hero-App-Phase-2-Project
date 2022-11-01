@@ -36,6 +36,7 @@ const NewForm = ({ addHero }) => {
   
   return (
     <div>
+      <p>Enter the followin information to add another hero to your team.</p>
   <form onSubmit={handleSubmit} className="new-hero" noValidate autoComplete="off">
     <label htmlFor='name'/>
     <Input id='name' onChange={handleChange} type='text' value={heroData.name} placeholder="Hero Name..."  />
