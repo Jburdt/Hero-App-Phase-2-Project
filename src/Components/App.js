@@ -4,7 +4,6 @@ import HerosList from './HerosList';
 import {  BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from './NavBar';
 import NewForm from './NewForm';
-import Counter from './Counter';
 
 const App = () => {
   
@@ -29,7 +28,6 @@ const App = () => {
   
   return (
     <Router>
-      <Counter />
      <NavBar />
     <Routes> 
       <Route exact path='/' element={<Home />}/>
