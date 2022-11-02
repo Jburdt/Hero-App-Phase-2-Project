@@ -40,3 +40,13 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+### Contributing
+
+* I would love your input! I want to make contributing to this project as easy and transparent as possible, whether it's:
+
+* Reporting a bug
+* Discussing the current state of the code
+* Submitting a fix
+* Proposing new features
+* Becoming a maintainer
